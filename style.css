@@ -1,0 +1,56 @@
+:root {
+    --primary-color: #850685;
+    --secondary-color: #E986E9;
+    --shadow-color: #6e116e;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+body {
+    background-image: linear-gradient(var(--secondary-color), var(--primary-color));
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+h1 {
+    font-family: "Orbitron", serif;
+    color: white;
+    text-shadow: 0 4px 3px var(--shadow-color);
+    font-size: 50px;
+    margin: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#qrInput {
+    width: 80%;
+    display: block;
+    margin: 20px auto;
+    font-size: 22px;
+    padding: 10px;
+    border-radius: 10px;
+    resize: none;
+}
+
+#generateButton {
+    width: 80%;
+    margin: auto;
+    display: block;
+    padding: 20px;
+    font-size: 22px;
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+#generateButton:hover {
+    cursor: pointer;
+    background-color: var(--primary-color);
+}
