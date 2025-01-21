@@ -66,9 +66,63 @@ h1 {
     border-radius: 20px;
 }
 
+#canvasDiv canvas {
+    width: 80%;
+    margin: auto;
+}
+
 #qrParagraph {
     color: white;
     font-size: 22px;
     text-align: center;
     margin-top: 20px;
+    word-break: break-all;
+}
+
+#divider {
+    display: none;
+}
+
+
+@media (min-width: 1200px) {
+    
+    #centerDiv {
+        width: 900px;
+        margin: auto;
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 80px;
+    }
+
+    #qrInput {
+        padding: 20px; 
+        font-size: 26px;
+        margin: 50px auto;
+    }
+
+    #divider {
+        display: block;
+        width: 3px;
+        height: 50vh;
+        background-color: rgba(255, 255, 255, 0.5);
+        margin: 0 50px;
+    }
+
+    #qrParagraph {
+        font-size: 30px;
+    }
+
+    #canvasDiv {
+        width: 250px;
+    }
+
+    #canvasDiv canvas {
+        width: 90%;
+    }
+
 }

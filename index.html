@@ -12,12 +12,25 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <h1>QR Generator</h1>
-    <textarea name="" id="qrInput" rows="3" placeholder="Enter your text"></textarea>
-    <button id="generateButton" onclick="generateCode()">Generate</button>
-    <div id="canvasDiv">
-        <canvas id="canvas"></canvas>
+
+    <div id="centerDiv">
+
+        <div id="qrDiv">
+            <h1>QR Generator</h1>
+            <textarea name="" id="qrInput" rows="3" placeholder="Enter your text"></textarea>
+            <button id="generateButton" onclick="generateCode()">Generate</button>
+        </div>     
+        
+        <div id="divider"></div>
+
+        <div id="resultDiv">
+            <div id="canvasDiv">
+                <canvas id="canvas"></canvas>
+            </div>
+            <p id="qrParagraph"></p>
+        </div>
+
     </div>
-    <p id="qrParagraph"></p>
+    
 </body>
 </html>

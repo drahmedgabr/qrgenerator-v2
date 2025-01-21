@@ -13,7 +13,7 @@ function generateCode() {
             element: canvas,
             value: qrText,
             foreground: "#850685",
-            size: 140,
+            size: 200,
         });
 
         qrParagraph.innerText = qrText;
